@@ -1,0 +1,297 @@
+.landing {
+  height: calc(100vh - 60px);
+  padding: 50px 70px;
+}
+
+.container {
+  padding: 70px;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  background-color: #a457e72f;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px !important;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0 !important;
+}
+
+.subtitle {
+  color: #5d12d2;
+}
+
+.title span {
+  font-size: 90px;
+  color: #5d12d2;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: fit-content;
+  font-weight: bold;
+  background-color: #701bf8;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #5d12d2;
+  color: white;
+}
+
+.LinkButton {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.LinkButton:hover {
+  outline: 1.5px dashed #ffb000;
+  color: #ffb000;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.8;
+}
+
+.img {
+  position: relative;
+}
+
+.intro {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 110px;
+  left: 60px;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #5d12d2;
+}
+
+.img img {
+  max-width: 100%;
+}
+
+.circle {
+  position: absolute;
+  outline: 1px solid #ffb000;
+  height: 100%;
+  aspect-ratio: 1;
+  z-index: -1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid #ffb000;
+  height: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.circle2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid #ffb000;
+  height: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+@media (max-width: 1900px) {
+  .title {
+    font-size: 60px !important;
+  }
+
+  .title span {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .title {
+    font-size: 50px !important;
+  }
+
+  .title span {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .title {
+    font-size: 43px !important;
+  }
+
+  .title span {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .landing {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .container {
+    gap: 15px;
+    flex-direction: column-reverse;
+  }
+
+  .title {
+    font-size: 60px !important;
+  }
+
+  .title span {
+    font-size: 80px;
+  }
+
+  .description {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .title {
+    font-size: 50px !important;
+  }
+
+  .title span {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 950px) {
+  .title {
+    font-size: 40px !important;
+  }
+
+  .title span {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 35px !important;
+  }
+
+  .title span {
+    font-size: 45px;
+  }
+
+  .circle {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .landing {
+    padding: 0px;
+  }
+  .title {
+    font-size: 40px !important;
+  }
+
+  .title span {
+    font-size: 50px;
+  }
+  .intro {
+    padding: 7px;
+    font-size: 14px;
+    left: 10%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 590px) {
+  .title {
+    font-size: 35px !important;
+  }
+
+  .title span {
+    font-size: 45px;
+  }
+
+  .button {
+    padding: 12px 18px;
+  }
+}
+@media (max-width: 520px) {
+  .title {
+    font-size: 30px !important;
+  }
+
+  .title span {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 25px !important;
+  }
+
+  .title span {
+    font-size: 30px;
+  }
+
+  .intro {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .title {
+    font-size: 20px !important;
+  }
+
+  .title span {
+    font-size: 25px;
+  }
+  .intro {
+    font-size: 10px;
+    left: 5%;
+  }
+}

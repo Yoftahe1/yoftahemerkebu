@@ -1,0 +1,64 @@
+.preloader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.circle1 {
+  position: absolute;
+  top: -500px;
+  right: -500px;
+  border-radius: 50%;
+  background-color: #a457e72f;
+}
+.circle2 {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  border-radius: 50%;
+  background-color: #a457e72f;
+}
+
+.circle3 {
+  position: absolute;
+  bottom: -120px;
+  left: 300px;
+  border-radius: 50%;
+  background-color: #a457e72f;
+}
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #5d12d2 !important;
+  text-transform: capitalize;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .preloader {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 40px;
+  }
+}

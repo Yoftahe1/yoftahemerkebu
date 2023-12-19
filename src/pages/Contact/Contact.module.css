@@ -1,0 +1,149 @@
+.contact {
+  min-height: 100vh;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin: 0 !important;
+  color: #5d12d2 !important;
+}
+
+.subtitle {
+  padding: 30px 0;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.container {
+  width: 1100px;
+  display: flex;
+  gap: 100px;
+  margin: 60px 0;
+}
+
+.cardContainerAndTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  padding: 15px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.card:hover {
+  outline: 2px dashed #FFB000;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #5d12d2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer {
+  flex: 1.75;
+}
+
+.button {
+  background-color: #5d12d2;
+}
+
+.button:hover {
+  background-color: #3d1086 !important;
+}
+
+@media (max-width: 1240px) {
+  .container {
+    width: 800px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    width: 600px;
+    flex-direction: column;
+  }
+
+  .cardContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    padding: 0px;
+
+  }
+
+  .contactInfo {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width:600px) {
+  .contact {
+    padding: 30px;
+  }
+
+  .container {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width:500px) {
+  .subtitle {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+  }
+}
+
+@media (max-width:410px) {
+  .title {
+    font-size: 17px !important;
+  }
+
+  .subtitle {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+  }
+}
