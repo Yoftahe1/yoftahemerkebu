@@ -13,7 +13,7 @@ import styles from "./Projects.module.css";
 
 const { Text, Title } = Typography;
 
-const buttons = ["All", "React Js", "Next Js", "React Native", "Flutter"];
+const buttons = ["All", "React Js", "Next Js", "React Native", "Flutter","Electron"];
 
 const Projects = () => {
   const controls = useAnimation();
@@ -84,6 +84,7 @@ const Projects = () => {
             { value: "Next Js", label: "Next Js" },
             { value: "React Native", label: "React Native" },
             { value: "Flutter", label: "Flutter" },
+            { value: "Electron", label: "Electron" },
           ]}
         />
       </div>
